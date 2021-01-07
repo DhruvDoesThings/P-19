@@ -17,10 +17,10 @@ function setup(){
    createCanvas(windowWidth-100,windowHeight-100);
   bacgrd = createSprite(0,0);
   bacgrd.addImage("back",backImg);
-  bacgrd.scale = 1.5;
+  bacgrd.scale = 2.1;
 
   placeChar = createSprite(width-1000,height-300,50,50);
-  placeChar.shapeColor = "red";
+  //placeChar.shapeColor = "red";
   placeChar.addImage("character",charImg);
   placeChar.scale=0.4;
   placeChar.setCollider("rectangle",0,0,100,300);
@@ -116,7 +116,7 @@ function draw(){
 
      
 
-
+      }
 
     drawSprites();
 }
@@ -136,7 +136,7 @@ function spawnPlatforms(){
     platformsGroup.add(platform);
   }
  
-}}
+}
 
 
 
